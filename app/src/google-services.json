@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "516875773807",
+    "firebase_url": "https://playbuddy-iiitd.firebaseio.com",
+    "project_id": "playbuddy-iiitd",
+    "storage_bucket": "playbuddy-iiitd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516875773807:android:e4b3fe5f628c09f2",
+        "android_client_info": {
+          "package_name": "com.example.ashish.playbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516875773807-3pkr3foj30kumsp9jcf3hhiv9gt13bla.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ashish.playbuddy",
+            "certificate_hash": "a1920cf1730bd844a9739bf0c013f2941c24e104"
+          }
+        },
+        {
+          "client_id": "516875773807-gf7b1c43r8aonjn5vti9j664lhqbqdk5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGvgU10B4D4cKDWcghfiycZp1O1pVD2ss"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516875773807-gf7b1c43r8aonjn5vti9j664lhqbqdk5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

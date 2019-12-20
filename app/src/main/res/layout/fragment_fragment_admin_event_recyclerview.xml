@@ -1,0 +1,77 @@
+<!--android.support.v4.widget.SwipeRefreshLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminEventRecyclerViewFrag">
+    
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".NavigationDrawer"
+        tools:showIn="@layout/fragment_news_admin_recycler_view">
+
+
+        <RelativeLayout
+            android:id="@+id/eventHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/eventrecyclerviewlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@id/eventlower"
+            app:layout_constraintTop_toBottomOf="@id/eventHeading">
+
+            <TextView
+                android:id="@+id/headingevent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Events"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/headingevent"
+                android:id="@+id/recycler_view_user_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:scrollbars="vertical"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/eventlower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/addEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10sp"
+                android:layout_marginEnd="10sp"
+                android:src="@drawable/baseline_add_white_48"
+                />
+
+        </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFindBuddyFrag">
+
+
+    <TextView
+        android:id="@+id/findbuddyheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="Find Buddy"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="@dimen/material_drawer_account_header_compact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  <EditText
+        android:id="@+id/findbuddytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Title"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/findbuddyspinerlayout"
+        app:layout_constraintTop_toBottomOf="@id/findbuddyheading"
+        app:layout_goneMarginEnd="20dp"
+        app:layout_goneMarginStart="20dp"
+        app:layout_goneMarginTop="20dp" />-->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/findbuddyspinerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toTopOf="@+id/findbuddyselectSlot"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findbuddyheading">
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/uetv1"
+            android:text="Select Sport"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Spinner
+            android:id="@+id/findbuddysportlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:spinnerMode="dialog"
+            app:layout_constraintTop_toBottomOf="@id/uetv1"
+            app:layout_constraintBottom_toTopOf="@id/uetv2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+
+             />
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:id="@+id/uetv2"
+            app:layout_constraintTop_toBottomOf="@id/findbuddysportlist"
+            android:text="Select Venue"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <Spinner
+
+            android:id="@+id/findbuddyvenuelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:spinnerMode="dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uetv2"
+            />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/findbuddyselectSlot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="8sp"
+        android:layout_marginEnd="8sp"
+        android:text="Select Slot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        />
+
+</android.support.constraint.ConstraintLayout>

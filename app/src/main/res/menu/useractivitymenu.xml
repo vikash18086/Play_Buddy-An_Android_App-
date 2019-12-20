@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/newsevent"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="News/Events" />
+        <item
+            android:id="@+id/interest"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Interest" />
+        <item
+            android:id="@+id/playarea"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Play Area" />
+        <item
+            android:id="@+id/findbuddy"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Find Buddy" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/aboutus"
+                android:icon="@drawable/ic_menu_share"
+                android:title="About us" />
+            <item
+                android:id="@+id/contactus"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact us" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="Logout" />
+</menu>
